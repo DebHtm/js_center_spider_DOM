@@ -16,6 +16,8 @@ function centering() {
 
 if (spider.complete) {
   centering();
+  window.addEventListener('resize', centering);
 } else {
   spider.addEventListener('load', centering);
+  window.addEventListener('resize', centering);
 }
